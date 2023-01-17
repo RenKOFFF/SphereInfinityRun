@@ -1,9 +1,7 @@
 using System;
 using System.Collections;
 using TMPro;
-using UnityEditor.UI;
 using UnityEngine;
-using UnityEngine.UI;
 
 public enum Difficulty
 {
@@ -46,8 +44,7 @@ public class GameManager : MonoBehaviour
 
     public int LastedTime { get; set; }
     public int AttemptCount { get; set; }
-
-    [SerializeField] private TMP_Dropdown _difficultyLevelDropdown;
+    
     private Difficulty _difficultyLevel = Difficulty.Easy;
 
     private bool _isGameOver;
